@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="images/pngtree-initial-letter-tp-logo-template-png-image_3582066.jpg">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap5" />
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<link rel="stylesheet" href="css/tiny-slider.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/flatpickr.min.css">
+	<link rel="stylesheet" href="css/glightbox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.cursor {
+		  position: fixed;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  width: 50px;
+		  height: 50px;
+		  border-radius: 50%;
+		  background-color: #4287f5;
+		  pointer-events: none;
+		  z-index: -1;
+		}
+	
+		/* Media query for mobile devices */
+		@media (max-width: 767px) {
+		  .cursor {
+			display: none;
+		  }
+		}
+	  </style>
+	   <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #scrollButton {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      width: 50px;
+      height: 50px;
+      border: none;
+      outline: none;
+      background-color: #00838C;
+      color: white;
+      cursor: pointer;
+      border-radius: 50%;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    #scrollButton:hover {
+      background-color: #00838C;
+    }
+
+    #scrollButton::before {
+      content: "";
+      display: block;
+      width: 14px;
+      height: 14px;
+      border-bottom: 3px solid white;
+      border-left: 3px solid white;
+      transform: rotate(135deg);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -7px;
+      margin-left: -7px;
+      animation: arrowBlink 1s infinite;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(50%); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes arrowBlink {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
+  
+  
+<style>
+							/* From uiverse.io by @Ali-Tahmazi99 */
+button {
+ display: inline-block;
+ width: 150px;
+ height: 50px;
+ border-radius: 10px;
+ border: 1px solid #03045e;
+ position: relative;
+ overflow: hidden;
+ transition: all 0.5s ease-in;
+ z-index: 1;
+}
+
+button::before,
+button::after {
+ content: '';
+ position: absolute;
+ top: 0;
+ width: 0;
+ height: 100%;
+ transform: skew(15deg);
+ transition: all 0.5s;
+ overflow: hidden;
+ z-index: -1;
+}
+
+button::before {
+ left: -10px;
+ background: #240046;
+}
+
+button::after {
+ right: -10px;
+ background: #343661;
+}
+
+button:hover::before,
+button:hover::after {
+ width: 58%;
+}
+
+button:hover span {
+ color: #e0aaff;
+ transition: 0.3s;
+}
+
+button span {
+ color: #03045e;
+ font-size: 18px;
+ transition: all 0.3s ease-in;
+}
+						  </style>	  
+	
+	
+
+
+	<title>Travel Partner</title>
+</head>
+<body>
+
+<!-- Your website content goes here -->
+
+<button onclick="scrollToTop()" id="scrollButton" title="Go to top"></button>
+
+<script>
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scrollButton").style.display = "block";
+    } else {
+      document.getElementById("scrollButton").style.display = "none";
+    }
+  }
+
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<nav class="site-nav mt-3">
+		<div class="container">
+
+			<div class="site-navigation">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<a href="index.html" class="logo m-0 float-start">Travel Partner</a>
+					</div>
+					<div class="col-lg-6 d-none d-lg-inline-block text-center nav-center-wrap">
+						<ul class="js-clone-nav  text-center site-menu p-0 m-0">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About us</a></li>
+							<li class="has-children">
+								<a href="#">Destinations</a>
+								<ul class="dropdown">
+									<li><a href="paradise_beach.html">Paradise beach</a></li>
+									<li><a href="giza.html">Pyramids of Giza</a></li>
+									<li><a href="ajantha.html">Ajantha Caves</a></li>
+									<li><a href="him.html">Himalayas</a></li>
+									<li><a href="burj.html">Burj Khalifa</a></li>
+									<li><a href="flatiron.html">Flatiron Building</a></li>
+									<li><a href="Mt_Fuji.html">Mt. Fuji</a></li>
+									<li><a href="Taj.html">Taj Mahal</a></li>
+									<li><a href="wic.html">Wicklow Mountains</a></li>
+									<li><a href="eiffel.html">Eiffel Tower</a></li>
+								</ul>
+							</li>
+							<li class="active"><a href="services.html">Services</a></li>
+
+						</ul>
+					</div>
+					<div class="col-6 col-lg-3 text-lg-end">
+						<ul class="js-clone-nav d-none d-lg-inline-block text-end site-menu ">
+							<li class="cta-button"><a href="contact.html">Contact Us</a></li>
+						</ul>
+
+						<a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+							<span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+
+	
+
+	<div class="hero overlay">
+
+		<div class="img-bg rellax">
+			<img src="images/ser.jpg" alt="Image" class="img-fluid">
+		</div>
+		<div class="container">
+			<div class="row align-items-center justify-content-start">
+				<div class="col-lg-5">
+
+					<h1 class="heading" data-aos="fade-up">Services</h1>
+					<p class="mb-5" data-aos="fade-up">service offered to tourists, such as, a service connected with accommodation, bus tours, tour guiding,food and beverage offered wholly or mainly to tourists. They offer information on visiting popular tourist destinations, attractions, things to do and hotels & resorts, along with best deals on India holiday packages.</p>
+
+					<div data-aos="fade-up">
+						<a href="https://youtu.be/sY2SFVanH8o" class="play-button align-items-center d-flex glightbox3" >
+							<span class="icon-button me-3">
+								<span class="icon-play"></span>
+							</span>
+							<span class="caption">Watch Video</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	</div>
+
+
+
+	<div class="section service-section-1">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-3 mb-4 mb-lg-0">
+					<div class="heading-content" data-aos="fade-up">
+						<h2>Featured <span class="d-block">Our Services</span></h2>
+						<p>Tourism,Package Tours,Travel Insurance,Airport Lounge Access</p>
+						<p class="my-4" data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary">View All</a></p>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="row">
+						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up"  data-aos-delay="100">
+							<div class="service-1">
+								<span class="icon">
+									<img src="images/ship.png" alt="Image" class="img-fluid">
+								</span>
+								<div>
+									<h3>Tourism</h3>
+									<p>Mughal palaces, sacred Hindu temples, lost Indian kingdoms and British imperial remnants all jostle for attention in a land that ranges from Himalayan peaks to Indian Ocean beaches</p></div>
+							</div>
+						</div>
+						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up"  data-aos-delay="200">
+							<div class="service-1">
+								<span class="icon">
+									<img src="images/pack.png" alt="Image" class="img-fluid">
+								</span>
+								<div>
+									<h3>Package Tours</h3>
+									<p><l>Seven Sisters Packages</l>
+
+										<l>Starting@ Rs.20 300.00</l><br/>
+										
+										<l>Madhya Pradesh Packages</l>
+										
+										<l>Starting@ Rs.17 900.00</l><br/>
+										
+										<l>Kerala Packages</l>
+										
+										<l>Starting@ Rs.11 949.00</l><br/></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up"  data-aos-delay="300">
+							<div class="service-1">
+								<span class="icon">
+									<img src="images/in.png" alt="Image" class="img-fluid">
+								</span>
+								<div>
+									<h3>Travel Insurance</h3>
+									<p>The multi-trip travel insurance plan is handy for the frequent travellers and it insures all the multiple trips within the specified duration.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="400">
+							<div class="service-1">
+							  <span class="icon">
+								<img src="images/ba.png" alt="Image" class="img-fluid">
+							  </span>					  
+									<h3>Airport Lounge Access</h3>
+									<p> Snacks,Hot Food & beverages<br>
+										Free Internet Stations / High speed WIFI<br>
+										Recharging stations<br>
+										TV and Music entertainment<br>
+										<b>Starts From 800*</b>
+										</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="section">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-3 mb-4 mb-lg-0">
+					<div class="heading-content" data-aos="fade-up">
+						<h2>Our<span class="d-block">Top Picks</span></h2>
+						<p></p>
+						<p class="my-4" data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary">View All</a></p>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="row">
+						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0 text-center" data-aos="fade-right"  data-aos-delay="100">
+							<div class="service-1 left-0 mb-5">
+								<span class="icon">
+									<a href=""><img src="images/cruise.jpg" alt="Image" class="img-fluid"></a>
+								</span>
+								<div>
+									<h3><i>Travel By waters</i></h3>
+									<p></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0 text-center" data-aos="fade-down"  data-aos-delay="200">
+							<div class="service-1 left-0 mb-5">
+								<span class="icon">
+									<a href=""><img src="images/motel.jpg" alt="Image" class="img-fluid"></a>
+								</span>
+								<div>
+									<h3><i>Book Your Stay</i></h3>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0 text-center" data-aos="fade-up"  data-aos-delay="300">
+							<div class="service-1 left-0 mb-5">
+								<span class="icon">
+									<a href=""><img src="images/plane.jpg" alt="Image" class="img-fluid"></a>
+								</span>
+								<div>
+									<h3><i>Travel By Air</i></h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0 text-center" data-aos="fade-up"  data-aos-delay="400">
+							<div class="service-1 left-0 mb-5">
+								<span class="icon">
+									<a href=""><img src="images/guide.jpg" alt="Image" class="img-fluid"></a>
+								</span>
+								<div>
+									<h3><i>Get Your Guide</i></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="destinations">
+					 <div class="thumb">
+						<a href="services.html"><img src="images/bag.jpg" alt="Image" class="img-fluid"></a>
+						</div>
+					</div>
+					</div>
+				</div>
+				<button class="button type1">
+					<a href="contact.html"><span class="btn-txt">Contact</span></a>
+				</button>
+				
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-lg-6 mx-auto text-center">
+					<div class="heading-content" data-aos="fade-up">
+						<h2>Our Other Service</h2>
+						<p>We always try our best to provide you guys with our best services with other sites.</p>
+						<p class="my-4" data-aos="fade-up" data-aos-delay="300"><a href="services.html" class="btn btn-primary">View All</a></p>
+						<div class="row">
+							<div class="col-lg-6 mx-auto text-center">
+								<div class="service-2 left-0 mb-5">
+									<a href="https://www.viator.com/Bolivia-tours/Airport-Lounges/d5026-g15-c26031?m=33953&supag=1227055138910018&supsc=dat-2328490749787571&supai=76691028521912&supdv=c&supnt=nt%3Ao&suplp=157888&supli=&supti=dat-2328490749787571&tsem=true&supci=dat-2328490749787571&supkw=airport+lounge+access&msclkid=cfe7ab2249f218396339cf4f8f05d7cf"><img src="images/gal_5.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+									<h4><i>Airport lounge support</i></h4>
+									
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+	
+
+	<div class="site-footer">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="widget">
+						<h3>About us<span class="text-primary">.</span> </h3>
+						<p>We are some interns who are determined to do something useful<br />
+							Thank You</p>
+					</div> <!-- /.widget -->
+					<div class="widget">
+						<h3>Connect</h3>
+						<ul class="list-unstyled social">
+							<li><a href="#"><span class="icon-instagram"></span></a></li>
+							<li><a href="#"><span class="icon-twitter"></span></a></li>
+							<li><a href="#"><span class="icon-facebook"></span></a></li>
+							<li><a href="#"><span class="icon-linkedin"></span></a></li>
+							<li><a href="#"><span class="icon-pinterest"></span></a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+				
+
+				<div class="col-lg-2">
+					<div class="widget">
+						<h3>Company</h3>
+						<ul class="list-unstyled float-left links">
+							<li><a href="about.html">About us</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+
+				<div class="col-lg-3">
+					<div class="widget">
+						<h3>Contact</h3>
+						<address>Nellore 524001</address>
+						<ul class="list-unstyled links mb-4">
+							<li><a href="tel://9876543210">9876543210</a></li>
+							<li><a href="mailto:travelpartner@gmail.com">travelpartner@gmail.com</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+			</div> <!-- /.row -->
+
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;Travel Partner</a>
+					</p>
+				</div>
+			</div> <!-- /.container -->
+		</div> <!-- /.site-footer -->
+
+		<div class="loader">
+			<span class="loader-text">loading</span>
+			  <span class="load"></span>
+		  </div>
+		  	<button onclick="scrollToTop()" id="scrollButton" title="Go to top"></button>
+
+		<script>
+		  window.onscroll = function() {
+			scrollFunction();
+		  };
+		
+		  function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			  document.getElementById("scrollButton").style.display = "block";
+			} else {
+			  document.getElementById("scrollButton").style.display = "none";
+			}
+		  }
+		
+		  function scrollToTop() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		  }
+		  </script>
+		
+		<div class="cursor"></div>
+	  <script>
+		let cursorX = 0;
+		let cursorY = 0;
+	
+		document.addEventListener('mousemove', (event) => {
+		  cursorX = event.clientX;
+		  cursorY = event.clientY;
+	
+		  const cursor = document.querySelector('.cursor');
+		  cursor.style.left = cursorX + 'px';
+		  cursor.style.top = cursorY + 'px';
+		});
+	  </script>
+
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/tiny-slider.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="js/navbar.js"></script>
+		<script src="js/counter.js"></script>
+		<script src="js/rellax.js"></script>
+		<script src="js/flatpickr.js"></script>
+		<script src="js/glightbox.min.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+	</html>

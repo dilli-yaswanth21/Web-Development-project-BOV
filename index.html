@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="images/pngtree-initial-letter-tp-logo-template-png-image_3582066.jpg">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap5" />
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<link rel="stylesheet" href="css/tiny-slider.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/flatpickr.min.css">
+	<link rel="stylesheet" href="css/glightbox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+<style>
+    .cursor {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #4287f5;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    /* Media query for mobile devices */
+    @media (max-width: 767px) {
+      .cursor {
+        display: none;
+      }
+    }
+  </style>
+  <style>
+		body {
+		  margin: 0;
+		  padding: 0;
+		}
+	
+		#scrollButton {
+		  display: none;
+		  position: fixed;
+		  bottom: 20px;
+		  right: 30px;
+		  z-index: 99;
+		  width: 50px;
+		  height: 50px;
+		  border: none;
+		  outline: none;
+		  background-color: #00838C;
+		  color: white;
+		  cursor: pointer;
+		  border-radius: 50%;
+		  animation: fadeIn 0.3s ease-in-out;
+		}
+	
+		#scrollButton:hover {
+		  background-color: #00838C;
+		}
+	
+		#scrollButton::before {
+		  content: "";
+		  display: block;
+		  width: 14px;
+		  height: 14px;
+		  border-bottom: 3px solid white;
+		  border-left: 3px solid white;
+		  transform: rotate(135deg);
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  margin-top: -7px;
+		  margin-left: -7px;
+		  animation: arrowBlink 1s infinite;
+		}
+	
+		@keyframes fadeIn {
+		  0% { opacity: 0; transform: translateY(50%); }
+		  100% { opacity: 1; transform: translateY(0); }
+		}
+	
+		@keyframes arrowBlink {
+		  0% { opacity: 0; }
+		  50% { opacity: 1; }
+		  100% { opacity: 0; }
+		}
+	  </style>
+
+
+
+	
+
+
+	<title>Travel Partner</title>
+</head>
+<body>
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<nav class="site-nav mt-3">
+		<div class="container">
+
+			<div class="site-navigation">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<a href="index.html" class="logo m-0 float-start">
+							Travel Partner</a>
+					</div>
+					<div class="col-lg-6 d-none d-lg-inline-block text-center nav-center-wrap">
+						<ul class="js-clone-nav  text-center site-menu p-0 m-0">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="about.html">About us</a></li>
+							<li class="has-children">
+								<a href="#">Destinations</a>
+								<ul class="dropdown">
+									<li><a href="paradise_beach.html">Paradise beach</a></li>
+									<li><a href="giza.html">Pyramids of Giza</a></li>
+									<li><a href="ajantha.html">Ajantha Caves</a></li>
+									<li><a href="him.html">Himalayas</a></li>
+									<li><a href="burj.html">Burj Khalifa</a></li>
+									<li><a href="flatiron.html">Flatiron Building</a></li>
+									<li><a href="Mt_Fuji.html">Mt. Fuji</a></li>
+									<li><a href="Taj.html">Taj Mahal</a></li>
+									<li><a href="wic.html">Wicklow Mountains</a></li>
+									<li><a href="eiffel.html">Eiffel Tower</a></li>
+								</ul>
+							</li>
+							<li><a href="services.html">Services</a></li>
+
+						</ul>
+					</div>
+					<div class="col-6 col-lg-3 text-lg-end">
+						<ul class="js-clone-nav d-none d-lg-inline-block text-end site-menu ">
+							<li class="cta-button"><a href="contact.html">Contact Us</a></li>
+						</ul>
+
+						<a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+							<span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+
+	
+
+	<div class="hero overlay">
+
+		<div class="img-bg rellax">
+			<img src="images/demo.jpg" alt="Image" class="img-fluid">
+		</div>
+
+		<div class="container">
+			<div class="row align-items-center justify-content-start">
+				<div class="col-lg-5">
+
+					<h1 class="heading" data-aos="fade-up">It's a Big World Out There, Go<br><span class="auto-type"></span></h1>
+					<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+					<script>
+						var typed = new Typed(".auto-type", {
+							strings: ["Explore.", "Discover..", "Experience...", "Adventure !"],
+							typeSpeed: 100,
+							backSpeed: 80,
+							loop: true
+						})
+					</script>
+					<style>
+						.auto-type{
+							color: #FFFFF0;
+						}
+						</style>
+					<p class="mb-5" data-aos="fade-up">Ever wonder what's out there in the world. Not all those who wander are lost. The world is so vast and waiting for us to be explored.</p>
+
+					<div data-aos="fade-up">
+						<a href="https://youtu.be/HWGzQlrJOqM" class="play-button align-items-center d-flex glightbox3" >
+							<span class="icon-button me-3">
+								<span class="icon-play"></span>
+							</span>
+							<span class="caption">Watch Video</span>
+						</a>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+
+		
+	</div>
+
+
+	<div class="section section-2">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-lg-6 order-lg-2 mb-5 mb-lg-0">
+					<div class="image-stack mb-5 mb-lg-0">
+						<div class="image-stack__item image-stack__item--bottom" data-aos="fade-up"  >
+							<img src="images/taj1.jpg" alt="Image" class="img-fluid rellax ">
+						</div>
+						<div class="image-stack__item image-stack__item--top" data-aos="fade-up" data-aos-delay="100"  data-rellax-percentage="0.5">
+							<img src="images/Green.jpg" alt="Image" class="img-fluid">
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-4 order-lg-1">
+
+					<div>
+						
+						<h2 class="heading mb-3" data-aos="fade-up" data-aos-delay="100">Make Sure You Got All The Good Memories With Your Loved Ones</h2>
+
+						<p data-aos="fade-up" data-aos-delay="200">Life is too short, we only get to live once. Make sure you live it like there's no tomorrow..</p>
+
+						<p data-aos="fade-up" data-aos-delay="300">Or life is like a small river we don't know how far it goes. So, enjoy your journey in it until you get to your destination.</p>
+
+						<p class="my-4" data-aos="fade-up" data-aos-delay="300"><a href="#blog" class="btn btn-primary">Read more</a></p>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>		
+	</div>
+
+	<div class="section service-section-1">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-3 mb-4 mb-lg-0">
+					<div class="heading-content" data-aos="fade-up">
+						<h2>Featured <span class="d-block">Our Services</span></h2>
+						<p>Tourism,Package Tours,Travel Insurance,Airport Lounge Access</p>
+						<p class="my-4" data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary">View All</a></p>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="row">
+						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up"  data-aos-delay="100">
+							<div class="service-1">
+								<span class="icon">
+									<img src="images/01.svg" alt="Image" class="img-fluid">
+								</span>
+								<div>
+									<h3>Tourism</h3>
+									<p>Mughal palaces, sacred Hindu temples, lost Indian kingdoms and British imperial remnants all jostle for attention in a land that ranges from Himalayan peaks to Indian Ocean beaches</p></div>
+							</div>
+						</div>
+						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up"  data-aos-delay="200">
+							<div class="service-1">
+								<span class="icon">
+									<img src="images/02.svg" alt="Image" class="img-fluid">
+								</span>
+								<div>
+									<h3>Package Tours</h3>
+									<p><l>Seven Sisters Packages</l>
+
+										<l>Starting@ Rs.20 300.00</l><br/>
+										
+										<l>Madhya Pradesh Packages</l>
+										
+										<l>Starting@ Rs.17 900.00</l><br/>
+										
+										<l>Kerala Packages</l>
+										
+										<l>Starting@ Rs.11 949.00</l><br/></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up"  data-aos-delay="300">
+							<div class="service-1">
+								<span class="icon">
+									<img src="images/03.svg" alt="Image" class="img-fluid">
+								</span>
+								<div>
+									<h3>Travel Insurance</h3>
+									<p>The multi-trip travel insurance plan is handy for the frequent travellers and it insures all the multiple trips within the specified duration.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up"  data-aos-delay="400">
+							<div class="service-1">
+								<span class="icon">
+									<img src="images/04.svg" alt="Image" class="img-fluid">
+								</span>
+								<div>
+									<h3>Airport Lounge Access</h3>
+									<p> Snacks,Hot Food & beverages<br>
+										Free Internet Stations / High speed WIFI<br>
+										Recharging stations<br>
+										TV and Music entertainment<br>
+										<b>Starts From 800*</b>
+										</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="section section-3" data-aos="fade-up" data-aos-delay="100">
+		<div class="container">
+			<div class="row align-items-center justify-content-between  mb-5">
+				<div class="col-lg-5" data-aos="fade-up">
+					<h2 class="heading mb-3">We Are Providing You Some Of The Best Travel Destinations Around The World</h2>
+					<p><i>Ever wonder what's out there in the world. Not all those who wander are lost. The world is so vast and waiting for us to be explored.</i></p>
+				</div>		
+				<div class="col-lg-5 text-md-end" data-aos="fade-up" data-aos-delay="100">
+					<div id="destination-controls">
+						<span class="prev me-3" data-controls="prev">
+							<span class="icon-chevron-left"></span>
+
+						</span>
+						<span class="next" data-controls="next">
+							<span class="icon-chevron-right"></span>
+
+						</span>
+					</div>
+				</div>
+			</div>	
+
+		</div>		
+
+		<div class="destination-slider-wrap">
+			<div class="destination-slider">
+				<div class="destination">
+					<div class="thumb">
+						<a href="paradise_beach.html"><img src="images/Para.jpg" alt="Image" class="img-fluid"></a>
+						<div class="price">$430</div>
+					</div>
+					<div class="mt-4">
+						<h3><a href="#">Paradise Beach, Palawan Island</a></h3>
+						<span class="meta">Maldives, Republic Maldives</span>
+					</div>
+				</div>
+
+				<div class="destination">
+					<div class="thumb">
+						<a href="Mt_Fuji.html"><img src="images/Mt.jpg" alt="Image" class="img-fluid"></a>
+						<div class="price">$560</div>
+					</div>
+					<div class="mt-4">
+						<h3><a href="#">Mt. Fuji</a></h3>
+						<span class="meta">Shizuoka, Japan</span>
+					</div>
+				</div>
+
+				<div class="destination">
+					<div class="thumb">
+						<a href="giza.html"><img src="images/eg.jpg" alt="Image" class="img-fluid"></a>
+						<div class="price">$490</div>
+					</div>
+					<div class="mt-4">
+						<h3><a href="#">The Great Pyramids of Giza</a></h3>
+						<span class="meta">Cairo, Egypt</span>
+					</div>
+				</div>
+
+				<div class="destination">
+					<div class="thumb">
+						<a href="ajantha.html"><img src="images/aj.jpg" alt="Image" class="img-fluid"></a>
+						<div class="price">$490</div>
+					</div>
+					<div class="mt-4">
+						<h3><a href="#">Ajantha Caves</a></h3>
+						<span class="meta">Maharashtra, India</span>
+					</div>
+				</div>
+
+
+				<div class="destination">
+					<div class="thumb">
+						<a href="Taj.html"><img src="images/tem.jpg" alt="Image" class="img-fluid"></a>
+						<div class="price">$430</div>
+					</div>
+					<div class="mt-4">
+						<h3><a href="Taj.html">Taj Mahal
+
+						</a></h3>
+						<span class="meta">Agra, India</span>
+					</div>
+				</div>
+
+				<div class="destination">
+					<div class="thumb">
+						<a href="him.html"><img src="images/him.jpg" alt="Image" class="img-fluid"></a>
+						<div class="price">$560</div>
+					</div>
+					<div class="mt-4">
+						<h3><a href="him.html">Himalayas</a></h3>
+						<span class="meta">Kashmir, India</span>
+					</div>
+				</div>
+
+				<div class="destination">
+					<div class="thumb">
+						<a href="wic.html"><img src="images/wic.jpg" alt="Image" class="img-fluid"></a>
+						<div class="price">$490</div>
+					</div>
+					<div class="mt-4">
+						<h3><a href="wic.html">Wicklow Mountains</a></h3>
+						<span class="meta">Wicklow, ireland</span>
+					</div>
+				</div>
+
+				<div class="destination">
+					<div class="thumb">
+						<a href="burj.html"><img src="images/du.jpg" alt="Image" class="img-fluid"></a>
+						<div class="price">$490</div>
+					</div>
+					<div class="mt-4">
+	
+						<h3><a href="burj.html">Burj Khalifa</a></h3>
+						<span class="meta">DubaiUnited Arab Emirates, 
+							Dubai</span>
+					</div>
+				</div>
+
+				<div class="destination">
+					<div class="thumb">
+						<a href="eiffel.html"><img src="images/paris.jpg" alt="Image" class="img-fluid"></a>
+						<div class="price">$490</div>
+					</div>
+					<div class="mt-4">
+						<h3><a href="eiffel.html">Eiffel Tower
+						</a></h3>
+						<span class="meta">Paris, France</span>
+					</div>
+				</div>
+				<div class="destination">
+					<div class="thumb">
+						<a href="flatiron.html"><img src="images/new.jpg" alt="Image" class="img-fluid"></a>
+						<div class="price">$490</div>
+					</div>
+					<div class="mt-4">
+						<h3><a href="flatiron.html">Flatiron Building
+						</a></h3>
+						<span class="meta">New York, United States</span>
+					</div>
+				</div>
+				
+
+				
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="section">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-lg-5 mb-4 mb-lg-0 order-lg-2" data-aos="fade-up">
+					<video src="images/mem.mp4" autoplay loop muted class="img-fluid">
+					</video>
+				</div>
+				<div class="col-lg-5" data-aos="fade-up" data-aos-delay="00">
+					<h2 class="heading mb-4">Sweet Memories Come To Life Again</h2>
+					<p>Like the ocean has the precious monument we all have that one person in our life, enjoy the rest of your life with them</p>
+					
+					<p class="my-4" data-aos="fade-up" data-aos-delay="200"><a href="#" class="btn btn-primary">Read more</a></p>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="section">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-lg-5 mb-4 mb-lg-0">
+					<a href="https://www.visitacity.com/en/eilat/activities/all-activities?activitiesCategoryId=32542&campaginid=60293323&adgroupid=287528552646457&targetid=kwd-8047078703687&utm_source=bing&utm_medium=cpc&utm_campaign=Eilat%20ActivitiesC29X%20G-REST-In-REST&utm_term=eilat%20scuba%20diving&utm_content=Scuba%20Diving" target="_blank">
+						<video src="images/sc.mp4" autoplay loop muted class="img-fluid">
+						</video>
+					  </a>
+				</div>
+				<div class="col-lg-5 mt-4 mt-lg-0"  data-aos="fade-up" data-aos-delay="00">
+
+					<h2 class="heading mb-5">Wanna go <br> Scuba Diving??<br/>
+					Click On The Scuba Diver 👈</h2>
+
+					<div class="custom-accordion" id="accordion_">
+						<div class="accordion-item">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What is scuba diving? </button>
+							</h2>
+
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion_">
+								<div class="accordion-body">
+									Scuba diving is a recreational underwater activity that allows individuals to explore the underwater world using specialized equipment. It involves diving into the water with a self-contained underwater breathing apparatus (SCUBA) that provides the diver with compressed air to breathe while underwater.
+
+Scuba diving is mainly done for the attraction of the unattainable undersea world. It is one area of nature that humankind has not been able to control fully; we are not able to breathe underwater. Hence, scuba diving allows us to be in that underwater world, even if it is just for a limited amount of time.
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Do I need to be a good swimmer to scuba dive?</button>
+							</h2>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion_">
+								<div class="accordion-body">
+								While being a good swimmer is beneficial, you don't necessarily have to be an exceptional swimmer to scuba dive. Basic swimming skills, such as being comfortable in the water and being able to swim a certain distance, are typically required for scuba diving certification. However, the buoyancy control and propulsion techniques used in scuba diving are different from traditional swimming techniques.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Where are popular scuba diving destinations?</button>
+							</h2>
+
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion_">
+								<div class="accordion-body">
+									There are numerous popular scuba diving destinations worldwide. Some renowned locations include the Great Barrier Reef in Australia, the Red Sea in Egypt, the Maldives, the Galapagos Islands in Ecuador, Palau, the Cayman Islands, the Caribbean Sea, and various sites in Southeast Asia like Thailand and Indonesia...
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="accordion-item">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Is scuba diving safe?</button>
+							</h2>
+
+							<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion_">
+								<div class="accordion-body">
+									Scuba diving can be safe when proper training, equipment, and safety protocols are followed. It is important to undergo scuba diving certification and training from a reputable dive organization to learn the necessary skills and safety procedures. Adhering to dive plans, diving within one's limits, and regularly maintaining dive equipment also contribute to safe diving practices.
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="section">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-12"data-aos="fade-up" data-aos-delay="0">
+					
+					<h2 class="heading mb-5">Recent Posts</h2>
+				</div>
+			</div>
+			<div class="row align-items-stretch">
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+					<div class="media-entry">
+						<a href="#">
+							<img src="images/tat1.jpg" alt="Image" class="img-fluid">
+						</a>
+						<div class="bg-white m-body">
+							<span class="date">May 26, 2021</span>
+							<h3><a href="#">Far far away, behind the word mountains</a></h3>
+							<p>Vokalia and Consonantia, there live the blind texts. Separated they live.</p>
+
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+					<div class="media-entry">
+						<a href="#">
+							<img src="images/tat2.jpg" alt="Image" class="img-fluid">
+						</a>
+						<div class="bg-white m-body">
+							<span class="date">July 22, 2023</span>
+							<h3><a href="#">The Grand Canal, is a vast waterway system</a></h3>
+							<p>It's running from Beijing in the north to Zhejiang province in the south.</p>
+
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+					<div class="media-entry">
+						<a href="#">
+							<img src="images/tat3.jpg" alt="Image" class="img-fluid">
+						</a>
+						<div class="bg-white m-body">
+							<span class="date">June 12, 2022</span>
+							<h3><a href="#">Museum of the KGB, Moscow, Russia</a></h3>
+							<p>The Lubyanka was originally built in 1898 as the headquarters.</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+					<div class="media-entry">
+						<a href="#">
+							<img src="images/tat4.jpg" alt="Image" class="img-fluid">
+						</a>
+						<div class="bg-white m-body">
+							<span class="date">March 18, 2023</span>
+							<h3><a href="#">Outcrops do not cover the majority of the Earth's</a></h3>
+							<p>The bedrock or superficial deposits are covered by soil and vegetation .</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+
+
+	<div class="py-5 bg-primary">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 text-center mb-3 mb-lg-0 text-lg-start">
+					<h3 class="text-white m-0">Begin your adventurous journey here.</h3>
+				</div>		
+				<div class="col-lg-5 text-center text-lg-end">
+					<a href="#" class="btn btn-outline-white">Get started</a>
+				</div>
+			</div>		
+		</div>		
+	</div>
+
+	<div class="site-footer">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="widget">
+						<h3>About us<span class="text-primary">.</span> </h3>
+						<p>We are some interns who are determined to do something useful<br />
+						Thank You</p>
+					</div> <!-- /.widget -->
+					<div class="widget">
+						<h3>Connect</h3>
+						<ul class="list-unstyled social">
+							<li><a href="#"><span class="icon-instagram"></span></a></li>
+							<li><a href="#"><span class="icon-twitter"></span></a></li>
+							<li><a href="#"><span class="icon-facebook"></span></a></li>
+							<li><a href="#"><span class="icon-linkedin"></span></a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+				
+				<div class="col-lg-2">
+					<div class="widget">
+						<h3>Company</h3>
+						<ul class="list-unstyled float-left links">
+							<li><a href="about.html">About us</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+
+				<div class="col-lg-3">
+					<div class="widget">
+						<h3>Contact</h3>
+						<address>Nellore 524001</address>
+						<ul class="list-unstyled links mb-4">
+							<li><a href="tel://9876543210">9876543210</a></li>
+							<li><a href="mailto:travelpartner@gmail.com">travelpartner@gmail.com</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-3 -->
+
+			</div> <!-- /.row -->
+
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;Travel Partner</a>
+					</p>
+				</div>
+			</div> <!-- /.container -->
+		</div> <!-- /.site-footer -->
+
+		<!-- Preloader -->
+		<div id="overlayer"></div>
+		<div class="loader">
+			<div class="spinner-border text-primary" role="status">
+				<span class="visually-hidden">Loading...</span>
+			</div>
+		</div>
+
+		<button onclick="scrollToTop()" id="scrollButton" title="Go to top"></button>
+		<script>
+		  window.onscroll = function() {
+			scrollFunction();
+		  };
+		
+		  function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			  document.getElementById("scrollButton").style.display = "block";
+			} else {
+			  document.getElementById("scrollButton").style.display = "none";
+			}
+		  }
+		
+		  function scrollToTop() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		  }
+		</script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/tiny-slider.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="js/navbar.js"></script>
+		<script src="js/counter.js"></script>
+		<script src="js/rellax.js"></script>
+		<script src="js/flatpickr.js"></script>
+		<script src="js/glightbox.min.js"></script>
+		<script src="js/custom.js"></script>
+		 <div class="cursor"></div>
+  <script>
+    let cursorX = 0;
+    let cursorY = 0;
+
+    document.addEventListener('mousemove', (event) => {
+      cursorX = event.clientX;
+      cursorY = event.clientY;
+
+      const cursor = document.querySelector('.cursor');
+      cursor.style.left = cursorX + 'px';
+      cursor.style.top = cursorY + 'px';
+    });
+  </script>
+  
+</body>
+</html>

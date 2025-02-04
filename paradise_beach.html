@@ -1,0 +1,146 @@
+ <!DOCTYPE html>
+    <html lang="en">
+       
+       <head>
+         <meta charset="UTF-8" />
+         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         <title>Paradise Beach</title>
+       
+         <link rel="shortcut icon" href="images/pngtree-initial-letter-tp-logo-template-png-image_3582066.jpg" />
+       
+         <!-- Add some meta tags for SEO and social media sharing -->
+         <meta name="description" content="Learn more about Burj Khalifa, the world’s tallest building and a mixed-use skyscraper in Dubai, United Arab Emirates." />
+         <meta name="keywords" content="Burj Khalifa, Dubai, skyscraper, architecture, tourism" />
+         <meta property="og:title" content="Burj Khalifa" />
+         <meta property="og:description" content="Learn more about Burj Khalifa, the world’s tallest building and a mixed-use skyscraper in Dubai, United Arab Emirates." />
+         <meta property="og:image" content="images/burj-khalifa.jpg" />
+         <meta property="og:url" content="https://example.com/burj-khalifa.html" />
+       
+         <link rel="preconnect" href="https://fonts.googleapis.com" />
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+         <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+       
+         <link rel="stylesheet" href="fonts/icomoon/style.css" />
+         <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+       
+         <link rel="stylesheet" href="css/tiny-slider.css" />
+         <link rel="stylesheet" href="css/aos.css" />
+         <link rel="stylesheet" href="css/flatpickr.min.css" />
+         <link rel="stylesheet" href="css/glightbox.min.css" />
+         <link rel="stylesheet" href="css/style2.css" />
+          <style>
+    .cursor {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #4287f5;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    /* Media query for mobile devices */
+    @media (max-width: 767px) {
+      .cursor {
+        display: none;
+      }
+    }
+  </style>
+  <style>
+             .center-align {
+               text-align: center;
+             }
+             
+           .video-element {
+             display: block;
+             margin: 0 auto;
+             width: 100%;
+             max-width: 500px; /* Adjust the maximum width as needed */
+           }
+         </style>
+  </head>
+       <body>
+        <header class="container" style="background-color: #F7F7F7;">
+        <h1>Paradise Beach</h1>
+        </header>
+      
+         
+         <main class="container">
+           <section id="about">
+             <figure>
+               <video src="images/para.mp4" autoplay loop muted class="center-align video-element"></video>
+               <figcaption>
+                 Paradise Beach
+                 </figcaption>
+             </figure>
+             <p class="center-align"> 
+               
+Paradise Beach is a beautiful white-sand beach located on Cadlao Island in El Nido, Palawan, Philippines. It is one of the most popular tourist destinations in El Nido, and is known for its stunning scenery, clear waters, and abundance of marine life.
+
+Paradise Beach is a crescent-shaped beach with powdery white sand and clear turquoise waters. The beach is lined with coconut trees and other tropical vegetation, and offers stunning views of the surrounding limestone cliffs. The water is perfect for swimming, snorkeling, and diving, and there are a number of small islands nearby that can be explored by kayak or boat.
+
+Paradise Beach is a great place to relax and enjoy the natural beauty of El Nido. There are a number of resorts and restaurants located near the beach, and there are also a number of activities available, such as hiking, biking, and kayaking..</p>
+           </section>
+           
+           
+       <section id="gallery">
+       <!--First section-->
+       
+         <h2 style="text-align: center;">Gallery</h2>
+         <ul class="gallery">
+               <li><img src="images/i1.jpg" alt="Image 1" /></li>
+               <li><img src="images/i2.jpg" alt="Image 2" /></li>
+               <li><img src="images/i3.jpg" alt="Image 3" /></li>
+               <li><img src="images/i4.jpg" alt="Image 4" /></li>
+               <li><img src="images/i5.jpg" alt="Image 5" /></li>
+               <li><img src="images/i6.jpg" alt="Image 6" /></li>
+             </ul>
+           </section>
+             <!-- Add Google Maps button -->
+             
+             <div class="center-align">
+               <button class="google-maps-button" onclick="window.open('https://goo.gl/maps/E36gM7Bau4JGvKwZ9?coh=178573&entry=tt', '_blank')">
+                 <span class="circle1"></span>
+                 <span class="circle2"></span>
+                 <span class="circle3"></span>
+                 <span class="circle4"></span>
+                 <span class="circle5"></span>
+                 <span class="text">Location</span>
+               </button>
+             </div>
+             
+       
+       
+       
+             
+             <footer class="container center-align">
+               <p>© 2023 Travel Partner. All rights reserved.</p>
+             </footer>
+             
+       
+         <script src="js/tiny-slider.js"></script>
+         <script src="js/aos.js"></script>
+         <script src="js/flatpickr.js"></script>
+         <script src="js/glightbox.min.js"></script>
+         <script src="js/main.js"></script>
+         <script src="js/burj.js"></script>
+         <div class="cursor"></div>
+  <script>
+    let cursorX = 0;
+    let cursorY = 0;
+
+    document.addEventListener('mousemove', (event) => {
+      cursorX = event.clientX;
+      cursorY = event.clientY;
+
+      const cursor = document.querySelector('.cursor');
+      cursor.style.left = cursorX + 'px';
+      cursor.style.top = cursorY + 'px';
+    });
+  </script>
+       </body>
+       </html>
